@@ -3,14 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Selamat Hari Raya Idul Fitri</title>
+    <title>Selamat Hari Raya Idul Fitri 2025</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('Keluarga.jpg') no-repeat center center;
+            background-size: cover;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            flex-direction: column;
             text-align: center;
-            background-color: #f8f9fa;
-            color: #333;
-            padding: 50px;
+            color: rgb(1, 0, 0);
+            text-shadow: 2px 2px 5px rgb(241, 236, 236);
+            font-family: Arial, sans-serif;
         }
         .container {
             background: white;
@@ -23,8 +32,8 @@
             color: #27ae60;
         }
         .button {
-            background-color: #27ae60;
-            color: white;
+            background-color: #0ea74d;
+            color: rgb(14, 1, 1);
             padding: 10px 20px;
             text-decoration: none;
             border-radius: 5px;
@@ -34,8 +43,9 @@
     </style>
 </head>
 <body>
+    
     <div class="container">
-        <h1>Selamat Hari Raya Idul Fitri</h1>
+        <h1>Selamat Hari Raya Idul Fitri 2025</h1>
         <p>Mohon maaf lahir dan batin</p>
         <a href="#" class="button" onclick="showGreeting()">Klik untuk Ucapan</a>
     </div>
@@ -44,6 +54,17 @@
         function showGreeting() {
             alert("Taqabbalallahu minna wa minkum, Selamat Idul Fitri!");
         }
+    </script>
+    <audio id="bg-music" loop>
+        <source src="lebaran.mp3" type="audio/mp3">
+    </audio>
+    <script>
+        document.addEventListener('click', function() {
+            let audio = document.getElementById('bg-music');
+            if (audio.paused) {
+                audio.play();
+            }
+        });
     </script>
 </body>
 </html>
